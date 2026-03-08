@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset básico de elementos */
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +6,7 @@
   font-family: sans-serif;
 }
 
+/* Definições básicas*/
 body {
   background-color: #520a78;
   color: #520a78;
@@ -16,14 +17,14 @@ body {
 
 .lobby-container {
   display: flex;
-  flex-direction: column; /* verticalização dos blocos */
+  flex-direction: column; /* Verticalização dos blocos */
   gap: 15px;
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Header principal - cápsula larga */
+/* Definições do header principal */
 .header {
   background-color: #fceae0;
   border: 2px solid #ff9900;
@@ -33,14 +34,14 @@ body {
   width: 80%; /* largura principal */
   margin: 0 auto;
 }
-
+/* Definições do nome da sala */
 .room-name {
   font-size: 24px;
   font-weight: bold;
   color: #ff9900;
 }
 
-/* Subheader - gaveta menor */
+/* Definições do subheader (fica abaixo do header principal) */
 .subheader {
   background-color: #ff9900;
   display: flex;
@@ -52,7 +53,7 @@ body {
   margin: -15px auto 20px auto; /* parece "saindo" do header */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+/* Definições do ícone de moeda*/
 .subheader .coin-icon {
   margin-right: 5px;
 }
@@ -61,13 +62,13 @@ body {
   font-weight: bold;
 }
 
-/* Painéis de jogadores e chat lado a lado */
+/* Coloca os painéis de jogadores e chat lado a lado */
 .panels {
   display: flex;
   gap: 15px;
 }
 
-/* Painel jogadores */
+/* Definições do painel jogadores */
 .players-panel {
   flex: 1;
   background-color: #fceae0;
@@ -77,7 +78,7 @@ body {
   overflow-y: auto; /* scrollbar */
 }
 
-/* Player cards maiores */
+/* Definições dos cards de jogadores */
 .player-card {
   display: flex;
   align-items: center;
@@ -91,7 +92,7 @@ body {
   font-size: 1.1rem;
 }
 
-/* Avatares maiores */
+/* Definições dos avatares */
 .avatar {
   width: 50px;
   height: 50px;
@@ -104,7 +105,7 @@ body {
   font-size: 1.2rem;
 }
 
-/* Painel chat */
+/* Definições do painel de chat */
 .chat-panel {
   flex: 1;
   background-color: #fceae0;
@@ -115,7 +116,7 @@ body {
   justify-content: space-between;
   height: 300px;
 }
-
+/*Definições das mensagens no chat*/
 .chat-messages {
   flex: 1;
   overflow-y: auto;
@@ -126,7 +127,7 @@ body {
   display: flex;
   gap: 5px;
 }
-
+/* Definições dos botões de mensagem rápida do chat*/
 .quick-btn {
   flex: 1;
   padding: 5px;
@@ -138,7 +139,7 @@ body {
   font-weight: bold;
 }
 
-/* Spinner aguardando jogadores */
+/* Definições e animação do spinner enquanto aguarda jogadores */
 .waiting {
   display: flex;
   align-items: center;
@@ -146,7 +147,6 @@ body {
   color: #fceae0;
   font-weight: bold;
 }
-
 .spinner {
   border: 4px solid #fceae0;
   border-top: 4px solid #ff9900;
@@ -155,7 +155,6 @@ body {
   height: 20px;
   animation: spin 1s linear infinite;
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -165,7 +164,7 @@ body {
   }
 }
 
-/* Reticências animadas */
+/* Reticências animadas na mensagem de aguardo */
 .dots::after {
   content: "";
   animation: dots 1s steps(3, end) infinite;
@@ -188,7 +187,7 @@ body {
   }
 }
 
-/* Painel de dicas */
+/* Definições e animação do painel de dicas */
 .tips {
   background-color: #520a78;
   padding: 10px;
@@ -202,19 +201,17 @@ body {
   display: inline-block;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
-
 .tip-hide {
   transform: translateY(-15px);
   opacity: 0;
 }
 
-/* Botões */
+/* Definições dos botões */
 .buttons {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
-
 .capsule-btn {
   border-radius: 50px;
   padding: 10px 20px;
@@ -222,13 +219,12 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
-
+/* Botão de saída da partida */
 .leave-btn {
   background-color: #520a78;
   border: 2px solid #ff9900;
   color: #ff9900;
 }
-
 .leave-btn:disabled {
   background-color: #520a78;
   border: 2px solid #ff9900;
@@ -236,13 +232,12 @@ body {
   opacity: 0.5;
   cursor: not-allowed;
 }
-
+/* Botão de início da partida */
 .start-btn {
   background-color: #ff9900;
   color: #fceae0;
   opacity: 1;
 }
-
 .start-btn:disabled {
   background-color: #520a78;
   border: 2px solid #ff9900;
@@ -250,3 +245,4 @@ body {
   opacity: 0.5;
   cursor: not-allowed;
 }
+

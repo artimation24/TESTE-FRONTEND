@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lobby Multiplayer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="lobby-container">
+      <!-- Header e Subheader -->
+      <div class="header">
+        <div class="room-name">TESTE FRONTEND</div>
+      </div>
+      <div class="subheader">
+        <div class="difficulty">Dificuldade: Todos</div>
+        <div class="entry-requirement">
+          <span class="coin-icon">💰</span> 10
+        </div>
+        <span class="fixed-text"> Jogadores: </span>
+        <div class="player-count">0 / 5</div>
+      </div>
+
+      <!-- Painéis: jogadores e chat lado a lado -->
+      <div class="panels">
+        <div class="players-panel">
+          <div id="players-list">
+            <div class="player-card">
+              <div class="avatar" style="background-color: #ff9900">V</div>
+              <span>Você</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-panel">
+          <div id="chat-messages" class="chat-messages"></div>
+          <div class="quick-messages">
+            <button class="quick-btn">Oi!</button>
+            <button class="quick-btn">Vamos lá!</button>
+            <button class="quick-btn">Boa sorte!</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spinner aguardando jogadores -->
+      <div id="waiting" class="waiting">
+        <div class="spinner"></div>
+        <div class="waiting-text">
+          Aguardando jogadores<span class="dots"></span>
+        </div>
+      </div>
+
+      <!-- Painel de dicas -->
+      <div class="tips">
+        <span class="lamp">💡</span>
+        <span class="fixed-text">Dica: </span>
+        <span id="tip-text" class="tip-text"></span>
+      </div>
+
+      <!-- Botões -->
+      <div class="buttons">
+        <button id="leave-btn" class="capsule-btn leave-btn">Desistir</button>
+        <button id="start-btn" class="capsule-btn start-btn" disabled>
+          Iniciar partida
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

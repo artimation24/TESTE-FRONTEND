@@ -10,6 +10,9 @@ Com isso esclarecido, vamos aos detalhes do projeto.
 ## Como rodar o projeto
 O meu projeto utiliza apenas HTML, CSS e JavaScript, então os arquivos podem ser baixados e rodados no navegador com o arquivo index.html, pode ser rodado pelo próprio GitHub Pages, e não é necessário nenhum dev server ou algo do tipo.
 
+### Link do GitHub Pages
+https://artimation24.github.io/TESTE-FRONTEND/
+
 ## Tecnologias utilizadas
 O código foi feito e testado através da plataforma online CodeSandbox, e gerado com ajuda do ChatGPT. Eu solicitei ao ChatGPT um código base e fui alterando ele com formatos de botões, cores, bordas de botões e cards, texturas de botões desabilitados, mudanças essas feitas e testadas através do CodeSandbox.
 
